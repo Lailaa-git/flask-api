@@ -5,7 +5,7 @@
 This project is a REST API built with Python and Flask. It contains a health check endpoint that returns the status of the API in JSON format.
 
 **Endpoint:**
-- `GET /health`
+- GET /health
 
 **Example response:**
 json
