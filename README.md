@@ -8,11 +8,11 @@ This project is a REST API built with Python and Flask. It contains a health che
 - `GET /health`
 
 **Example response:**
-```json
+json
 {
   "status": "ok"
 }
-```
+
 ## Requirements
 
 - Python
@@ -23,56 +23,51 @@ This project is a REST API built with Python and Flask. It contains a health che
 ## Run Locally
 1. Create and activate a virtual environment:
 
-```bash
 python3 -m venv venv
 source venv/bin/activate
-```
+
 
 2. Install dependencies:
-```bash
+
 pip install -r requirements.txt
-```
+
 
 3. Start the application:
-```bash
+
 python app.py
-```
+
 
 4. Open http://127.0.0.1:5001/health
+   
 ## Run Tests
-
 Run the automated test with:
-
-```bash
 pytest
-```
+
 
 The test checks the HTTP status code and JSON response.
 
 ## Run with Docker
-
 1. Build the Docker image:
-```bash
+
 docker build -t flask-api .
-```
+
 
 2. Start the container:
-```bash
+
 docker run -d --name flask-api-container -p 5002:5001 flask-api
-```
+
 
 3. Open http://127.0.0.1:5002/health
+   
 ## Project Structure
-
-```text
-flask-api/
+flask-api
 - app.py
 - test_app.py
 - requirements.txt
 - Dockerfile
 - .dockerignore
 - README.md
-```
+
 
 ## Technologies
 - Python
