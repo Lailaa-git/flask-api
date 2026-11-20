@@ -66,12 +66,12 @@ docker run -d --name flask-api-container -p 5002:5001 flask-api
 
 ```text
 flask-api/
-├── app.py
-├── test_app.py
-├── requirements.txt
-├── Dockerfile
-├── .dockerignore
-└── README.md
+- app.py
+- test_app.py
+- requirements.txt
+- Dockerfile
+- .dockerignore
+- README.md
 ```
 
 ## Technologies
